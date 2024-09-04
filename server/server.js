@@ -109,13 +109,6 @@ app.delete('/users/:id', (req, res) => {
 });
 
 
-
-
-
-
-
-
-
 app.listen(5000,()=>{
     console.log('Your server is running:http://localhost:5000')
 })
