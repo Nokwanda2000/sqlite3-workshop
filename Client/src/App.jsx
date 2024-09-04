@@ -7,12 +7,12 @@ const[list,setList] =useState([]);
 
   useEffect(()=>{
     axios.get('http://localhost:5000').then((res)=>{
-     list = res.data
+     setList(res.data)
     }).catch((error)=>{
       console.log(error,'Oops crashed')
 
     })
-  });
+  },[]);
   console.log(list)
 
   return (
